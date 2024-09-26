@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages</PremJadhav>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botpress Chatbot</ASP Library Chatbot>
+  <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+  <script>
+    window.botpressWebChat.init({
+      botId: "6e43d311-6d86-404a-91ca-ab467fd98832",
+      hostUrl: "https://cdn.botpress.cloud",
+      botName: "SupportBot",
+      showWidget: true,
+      showPoweredBy: false,
+      customStyleSheet: `
+        #bp-web-widget {
+          position: fixed !important;
+          bottom: 20px !important;
+          right: 20px !important;
+          z-index: 9999 !important;
+        }
+      `,
+    });
+  </script>
 </head>
 <body>
-    <h1>Welcome to My GitHub Pages Site</h1>
-    <p>This is my first page hosted on GitHub Pages!</p>
+  <!-- Bot will be injected dynamically -->
 </body>
 </html>
